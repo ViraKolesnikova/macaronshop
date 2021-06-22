@@ -11,103 +11,112 @@
     <header class="header">
         <div class="container">
             <div class="hamburger-menu">
-                <label class="hamburger-menu__btn">
+                <input class="checkbox" type="checkbox" id="checkbox"/>
+                <label for="checkbox" class="hamburger-menu__btn">
                     <span></span>
                 </label>
                 <div>
-                    <a class="logo" href="">
-                        <img class="hat" src="./images/hat.png" alt="колпак повара">
-                        <img class="butterfly" src="./images/butterfly.svg" alt="бабочка">
-                        <img class="logo-text" src="./images/logo-text.svg" alt="логотип">
+                    <a class="mobile-logo" href="">
+                        <img class="mobile-logo__hat" src="./images/hat.png" alt="колпак повара">
+                        <img class="mobile-logo__butterfly" src="./images/butterfly.svg" alt="бабочка">
+                        <img class="mobile-logo__logo-text" src="./images/logo-text.svg" alt="логотип">
                     </a>
                 </div>
                 <a class="cart-link" href="">
                     <img src="./images/cart.svg" alt="корзина">
                 </a>
-            </div>
-            <div class="header-top">
-                <button class="close-btn" type="button">
-                    <img class="close-btn-icon" src="./images/close-btn.svg" alt="кнопка закрытия">
-                </button>
-                <nav class="navigation-links">
-                    <ul class="navigation-list">
-                        <li class="navigation-list__item">
-                            <span class="nav-item-underline"></span>
-                            <a class="navigation-list__link" href="">Готовые наборы</a>
-                        </li>                        
-                        <li class="navigation-list__item">
-                            <span class="nav-item-underline"></span>
-                            <a class="navigation-list__link" href="">Собрать свой набор</a>
-                        </li>                        
-                        <li class="navigation-list__item">
-                            <span class="nav-item-underline"></span>
-                            <a class="navigation-list__link" href="">Акции
-                                <span class="navigation-list__link--accent">%</span>
-                            </a>
-                        </li>                        
-                        <li class="navigation-list__item">
-                            <span class="nav-item-underline"></span>
-                            <a class="navigation-list__link" href="">Каталог десертов </a>
-                        </li>                        
-                        <li class="navigation-list__item">
-                            <span class="nav-item-underline"></span>
-                            <a class="navigation-list__link" href="">Корпоративные подарки</a>
-                        </li>                        
-                        <li class="navigation-list__item">
-                            <span class="nav-item-underline"></span>
-                            <a class="navigation-list__link" href="">Оптовикам</a>
-                            <span class="nav-item-underline"></span>
-                        </li>                            
-                    </ul>                    
-                </nav>
-                <nav class="navigation-services">
-                    <ul class="navigation-services-list">
-                        <li class="navigation-services__item"><a href="">Свадебные предложения</a></li>
-                        <li class="navigation-services__item"><a href="">Наборы с печатью</a></li>
-                        <li class="navigation-services__item"><a href="">Гарантии вкуса и свежести</a></li>
-                        <li class="navigation-services__item"><a href="">Доставка и оплата</a></li>
-                        <li class="navigation-services__item"><a href="">Контакты</a></li>                        
-                    </ul>                    
-                </nav>
-                <ul class="contacts-list">
-                    <li class="contacts-list__item">
-                        <span class="nav-item-underline"></span>
-                        <a class="contacts-list__tel" href="">
-                           <img class="contacts-list__icon" src="./images/phone.svg" alt="телефон">
-                            8 812 309-82-88
-                        </a>
-                    </li>
-                    <li class="contacts-list__item">
-                        <ul class="social-link-list">
-                            <li class="social-link__item">
-                                <a href="">
-                                    <svg class="social-link-list__icon" width="15" height="15">
-                                        <use xlink:href="./images/icons.svg#icon-instagram"></use>
-                                    </svg>                                    
+            
+                <div class="header-top">               
+                    <nav class="navigation-links">
+                        <ul class="navigation-list">
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Готовые наборы</a>
+                            </li>                        
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Собрать свой набор</a>
+                            </li>                        
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Акции
+                                    <span class="navigation-list__link--accent">%</span>
+                                </a>
+                            </li>                        
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Каталог десертов </a>
+                            </li>                        
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Корпоративные подарки</a>
+                            </li>                        
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Оптовикам</a>
+                                <span class="nav-item-underline"></span>
+                            </li>                            
+                        </ul>                    
+                    </nav>
+                    <div class="header-desktop-order">
+                        <nav class="navigation-services">
+                            <ul class="navigation-services-list">
+                                <li class="navigation-services__item"><a class="navigation-services__link" href="">Свадебные предложения</a></li>
+                                <li class="navigation-services__item"><a class="navigation-services__link" href="">Наборы с печатью</a></li>
+                                <li class="navigation-services__item"><a class="navigation-services__link" href="">Гарантии вкуса и свежести</a></li>
+                                <li class="navigation-services__item"><a class="navigation-services__link" href="">Доставка и оплата</a></li>
+                                <li class="navigation-services__item"><a class="navigation-services__link" href="">Контакты</a></li>                        
+                            </ul>                    
+                        </nav>
+                        <ul class="contacts-list">
+                            <li class="contacts-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="contacts-list__tel" href="">
+                                <img class="contacts-list__icon" src="./images/phone.svg" alt="телефон">
+                                    8 812 309-82-88
                                 </a>
                             </li>
-                            <li class="social-link__item">
-                                <a href="">
-                                    <svg class="social-link-list__icon" width="15" height="15">
-                                        <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>                                
-                            </li>
-                            <li class="social-link__item">
-                                <a href="">
-                                    <svg class="social-link-list__icon" width="15" height="15">
-                                        <use xlink:href="./images/icons.svg#icon-linkedin"></use>
-                                    </svg>
-                                </a>
+                            <li class="contacts-list__item">
+                                <ul class="social-link-list">
+                                    <li class="social-link__item">
+                                        <a href="">
+                                            <svg class="social-link-list__icon" width="15" height="15">
+                                                <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                                            </svg>                                    
+                                        </a>
+                                    </li>
+                                    <li class="social-link__item">
+                                        <a href="">
+                                            <svg class="social-link-list__icon" width="15" height="15">
+                                                <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>                                
+                                    </li>
+                                    <li class="social-link__item">
+                                        <a href="">
+                                            <svg class="social-link-list__icon" width="15" height="15">
+                                                <use xlink:href="./images/icons.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
-                    </li>
-                </ul>
-
+                    </div>
+                </div>
             </div>
             <div class="header-bottom"></div>
         </div>
     </header>
+    <main>
+        <section class="hero">
+            <h1 class="main-title">Macaronshop <span class="title-discription">since 2013</span></h1>
+            <h2>Настоящая любовь</h2>
+            <p class="hero-introduce">Пирожные макарон и другие десерты из натуральных ингредиентов, приготовленные с любовью</p>
+            <div class="hero-bg-picture"></div>
+        </section>
+
+    </main>
 
     
 </body>
