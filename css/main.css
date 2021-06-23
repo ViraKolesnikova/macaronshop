@@ -921,6 +921,9 @@ body {
   .mobile-logo {
     display: none;
   }
+  .cart-link {
+    display: none;
+  }
   .header-top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -946,11 +949,6 @@ body {
   }
   .header-top .navigation-links {
     display: none;
-  }
-  .cart-link {
-    position: absolute;
-    top: 0;
-    left: 0;
   }
   .navigation-services,
   .contacts-list__item:not(:last-child) {

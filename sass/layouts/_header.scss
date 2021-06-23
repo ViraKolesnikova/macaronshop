@@ -239,6 +239,10 @@
     display: none;
   }
 
+  .cart-link {
+    display: none;
+  }
+
   .header-top {
     display: flex;
     flex-direction: row-reverse;
@@ -257,12 +261,6 @@
     display: none;
   }
 
-  .cart-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
   .navigation-services,
   .contacts-list__item:not(:last-child) {
     margin-right: 29px;
@@ -279,17 +277,14 @@
     font-size: 14px;
     line-height: 1.21;
     color: $header-color;
-  }
-
-  .contacts-list {
-    
-
-  }
+  }  
 
   .contacts-list__tel {
     display: flex;
     align-items: center;
   }
+
+  
 
   
 
