@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macaronshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/ProximaNova-Black.eot">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -79,7 +83,7 @@
                             <li class="contacts-list__item">
                                 <a class="cart-link-desktop" href="">
                                     <img src="./images/cart.svg" alt="корзина">
-                                    <p>В корзине (4 товара)</p>
+                                    <p class="cart-link__ammount">В корзине (4 товара)</p>
                                 </a>  
                             </li>
                             <li class="contacts-list__item">
@@ -111,8 +115,49 @@
                     </div>
                 </div>
             </div>
-            <div class="header-bottom"></div>
         </div>
+            <div class="header-bottom">
+               <div class="container">
+                    <nav class="navigation-links--desktop">
+                        <ul class="navigation-list">
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Готовые наборы</a>
+                            </li>                        
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Собрать свой набор</a>
+                            </li>                        
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Акции
+                                    <span class="navigation-list__link--accent">%</span>
+                                </a>
+                            </li> 
+                            <li class="navigation-list__item">
+                                <a class="logo-desktop" href="">
+                                    <svg width="124" height="124">
+                                        <use href="./images/icons.svg#icon-logo-desktop"></use>
+                                    </svg>
+                                </a>
+                            </li>                       
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Каталог десертов </a>
+                            </li>                        
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Корпоративные подарки</a>
+                            </li>                        
+                            <li class="navigation-list__item">
+                                <span class="nav-item-underline"></span>
+                                <a class="navigation-list__link" href="">Оптовикам</a>
+                                <span class="nav-item-underline"></span>
+                            </li>                            
+                        </ul>                    
+                    </nav>
+               </div>
+            </div>
     </header>
     <main>
         <section class="hero">
@@ -120,6 +165,63 @@
             <h2>Настоящая любовь</h2>
             <p class="hero-introduce">Пирожные макарон и другие десерты из натуральных ингредиентов, приготовленные с любовью</p>
             <div class="hero-bg-picture"></div>
+            <ul class="services">
+                <li class="services__item">
+                    <a href="" class="services__link">
+                        <svg class="services__icon" width="58" heigth="58">
+                            <use href="./images/icons.svg#icon-services-1"></use>
+                        </svg>   
+                        <h3>Готовые наборы</h3>
+                        <p>Готовые наборы со скидкой. Вы можете подобрать набор на подходящий случай.</p>                     
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a href="" class="services__link">
+                        <svg class="services__icon" width="70" heigth="55">
+                            <use href="./images/icons.svg#icon-services-2"></use>
+                        </svg>
+                        <h3>Собрать свой набор</h3>
+                        <p>Выбрать количество макарун, и выбрать вкусы</p>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a href="" class="services__link">
+                        <svg class="services__icon" width="53" heigth="56">
+                            <use href="./images/icons.svg#icon-services-3"></use>
+                        </svg>
+                        <h3>Набор с индивидуальной печатью</h3>
+                        <p>Собрать набор макарон с уникальным дизайном. </p>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a href="" class="services__link">
+                        <svg class="services__icon" width="48" heigth="64">
+                            <use href="./images/icons.svg#icon-services-4"></use>
+                        </svg>
+                        <h3>Свадебные предложения</h3>
+                        <p>Нежные пирожные макаронс с разными вкусами для украшения вашего свадебного торжества</p>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a href="" class="services__link">
+                        <svg class="services__icon" width="55" heigth="52">
+                            <use href="./images/icons.svg#icon-services-5"></use>
+                        </svg>
+                        <h3>Корпоративные подарки</h3>
+                        <p>От 85 руб за шт. С уникальным дизайном. Приятный комплимент для коллег и партнеров</p>
+                    </a>
+                </li>
+                <li class="services__item">
+                    <a href="" class="services__link">
+                        <svg class="services__icon" width="56" heigth="56">
+                            <use href="./images/icons.svg#icon-services-6"></use>
+                        </svg>
+                        <h3>Оптовые поставки</h3>
+                        <p>Предложение для кофеен, кафе, отелей и т.д.
+Посмотрите условия сотрудничества и отзывы.</p>
+                    </a>
+                </li>
+            </ul>
         </section>
 
     </main>

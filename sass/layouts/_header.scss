@@ -10,6 +10,17 @@
   opacity: 0;
 }
 
+.navigation-list__link--accent {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: $accent-color;
+  color: $white;
+  border-radius: 50%;
+}
+
 .contacts-list__icon {
   margin-right: 13px;
 }
@@ -21,6 +32,8 @@
 .social-link__item:not(:last-child) {
   margin-right: 12px;
 }
+
+
 
 
 @media screen and (min-width: 320px) and (max-width: 799px) {
@@ -214,24 +227,22 @@
     margin-bottom: 11px;
   }
 
-  .navigation-list__link--accent {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    background-color: $accent-color;
-    color: $white;
-    border-radius: 50%;
-  }
+  
 
   .contacts-list__tel {
     display: flex;
     justify-content: center;
     padding-top: 14px;
   }
-
   
+  .logo-desktop,
+  .cart-link-desktop {
+    display: none;
+  }
+
+  .header-bottom {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -243,13 +254,11 @@
     display: none;
   }
 
-  .header-top {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-  }
+  .header-top .navigation-list {
+    display: none;
+  }  
 
-  .header-desktop-order,
+  .header-desktop-order,  
   .navigation-services-list,
   .contacts-list,
   .social-link-list {
@@ -257,8 +266,9 @@
     align-items: center;
   }
    
-  .header-top .navigation-links {
-    display: none;
+  .header-top {
+    display: flex;
+    flex-direction: column-reverse;    
   }
 
   .navigation-services,
@@ -284,9 +294,37 @@
     align-items: center;
   }
 
-  
+  .cart-link-desktop {
+    display: flex;
+    align-items: center;    
+  }
 
-  
+  .cart-link__ammount {
+    margin-left: 13px;
+  }
 
-  
+  .header-bottom {
+    background-color:$white;
+  }
+
+  .header-bottom .navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+  }
+
+  .navigation-list__link {
+    font-family: $primery-text-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    color: $nav-color;
+    text-transform: uppercase;
+  }
+
+  .logo-desktop {
+    display: block;
+    padding: 16px 0;
+  }  
 }
