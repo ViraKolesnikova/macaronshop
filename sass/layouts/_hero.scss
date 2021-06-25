@@ -44,7 +44,6 @@
 }
 
 .section-title {
-  margin-top: 40px;
   text-align: center;
 
   font-family: $secondary-text-font;
@@ -53,13 +52,36 @@
   line-height: 1.2;
 }
 
-@media screen and (min-width: 320px) and (max-width: 799px) {
+@media screen and (min-width: 320px) and (max-width: 1259px) {
   .hero {
     padding-top: 125px;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 1259px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (max-width: 1259px) and (min-resolution: 192dpi),
+  screen and (max-width: 1259px) and (min-resolution: 2dppx) {
+  .hero-bg-picture {
+    margin: 0 auto;
+    max-width: 320px;
+    height: 295px;
+    width: 100%;
+
+    background: url(../images/hero/hero-heart-mobile.png) center,
+      url(../images/hero/hero-macaroon1-mobile.png) -10% 65%,
+      url(../images/hero/hero-macaroon2-mobile.png),
+      url(../images/hero/hero-macaroon3-mobile.png),
+      url(../images/hero/hero-macaroon4-mobile.png),
+      url(../images/hero/hero-blue-mobile.png) 100% 200%,
+      url(../images/hero/hero-pink-mobile.png) 300%,
+      url(../images/hero/hero-blue-light-mobile.png) 200% -100%,
+      url(../images/hero/hero-blue1-mobile.png) -120%;
+
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1260px) {
   .hero {
     padding-top: 206px;
   }
