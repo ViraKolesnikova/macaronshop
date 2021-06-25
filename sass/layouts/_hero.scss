@@ -1,51 +1,65 @@
+.main-title {
+  text-align: center;
 
-@media screen and (min-width: 320px) and (max-width: 799px) {
-    .hero {
-        padding-top: 60px;
-    }
-
-    .main-title {
-        text-align: center;
-
-        font-family: $secondary-text-font;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 1.22;
-        text-transform: uppercase;
-        color: $primary-text-color;
-    }
-
-    .title-discription {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 16px;
-        line-height: 1.25;
-        text-transform: none;
-    }
-
-    .title-discription::before {
-        content: "";
-        display: inline-block;
-        margin-right: 4px;
-        width: 20px;
-        border: 1px solid $icons-color;        
-    }
-
-    .title-discription::after {
-        content: "";
-        display: inline-block;
-        margin-left: 4px;
-        width: 20px;
-        border: 1px solid $icons-color;        
-    }
+  font-family: $secondary-text-font;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+  color: $primary-text-color;
 }
 
+.title-discription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: none;
+}
+
+.title-discription::before {
+  content: "";
+  display: inline-block;
+  margin-right: 4px;
+  width: 20px;
+  border: 1px solid $icons-color;
+}
+
+.title-discription::after {
+  content: "";
+  display: inline-block;
+  margin-left: 4px;
+  width: 20px;
+  border: 1px solid $icons-color;
+}
+
+.section-title {
+  margin-top: 40px;
+  text-align: center;
+
+  font-family: $secondary-text-font;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.hero-introduce {
+  text-align: center;
+  margin-top: 11px;
+
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+@media screen and (min-width: 320px) and (max-width: 799px) {
+  .hero {
+    padding-top: 165px;
+  }
+}
 
 @media screen and (min-width: 800px) {
-   .hero {
-        padding-top: 206px;
-    } 
-
-
+  .hero {
+    padding-top: 206px;
+  }
 }
