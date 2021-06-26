@@ -644,8 +644,8 @@ body {
 .container {
   width: 320px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @media screen and (min-width: 1259px) {
@@ -717,6 +717,39 @@ body {
   .hero {
     padding-top: 125px;
   }
+  .services__icon,
+  .services__discription {
+    display: none;
+  }
+  .services__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 16px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .services__title::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-left: auto;
+    background: url(../images/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .services__item {
+    border-bottom: 1px solid rgba(41, 41, 41, 0.16);
+  }
 }
 
 @media screen and (max-width: 1259px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1259px) and (min-resolution: 192dpi), screen and (max-width: 1259px) and (min-resolution: 2dppx) {
@@ -725,7 +758,7 @@ body {
     max-width: 320px;
     height: 295px;
     width: 100%;
-    background: url(../images/hero/hero-heart-mobile.png) center, url(../images/hero/hero-macaroon1-mobile.png) -10% 65%, url(../images/hero/hero-macaroon2-mobile.png), url(../images/hero/hero-macaroon3-mobile.png), url(../images/hero/hero-macaroon4-mobile.png), url(../images/hero/hero-blue-mobile.png) 100% 200%, url(../images/hero/hero-pink-mobile.png) 300%, url(../images/hero/hero-blue-light-mobile.png) 200% -100%, url(../images/hero/hero-blue1-mobile.png) -120%;
+    background: url(../images/hero/hero-heart-mobile.png) center, url(../images/hero/hero-macaroon-mobile.png) 8% 10%, url(../images/hero/hero-macaroon1-mobile.png) -3% 65%, url(../images/hero/hero-macaroon2-mobile.png) 50% 100%, url(../images/hero/hero-macaroon3-mobile.png) 100% 75%, url(../images/hero/hero-macaroon4-mobile.png) 102% 5%, url(../images/hero/hero-blue-mobile.png) 100% 200%, url(../images/hero/hero-pink-mobile.png) -500% -50%, url(../images/hero/hero-blue-light-mobile.png) 200% -100%, url(../images/hero/hero-blue1-mobile.png) -120%;
     background-repeat: no-repeat;
   }
 }
@@ -1100,5 +1133,19 @@ body {
     display: block;
     padding: 16px 0;
   }
+}
+
+.promotion {
+  padding-top: 38px;
+  padding-bottom: 61px;
+}
+
+.promotion__title {
+  text-align: center;
+  margin-bottom: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
 }
 /*# sourceMappingURL=main.css.map */

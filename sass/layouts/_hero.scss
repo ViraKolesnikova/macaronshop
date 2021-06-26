@@ -56,6 +56,39 @@
   .hero {
     padding-top: 125px;
   }
+
+  .services__icon,
+  .services__discription {
+    display: none;
+  }
+
+  .services__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+
+    font-family: $secondary-text-font;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 8px;
+      margin-left: auto;
+
+      background: url(../images/arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .services__item {
+    border-bottom: 1px solid $services-mobile-underline;
+  }
 }
 
 @media screen and (max-width: 1259px) and (-webkit-min-device-pixel-ratio: 2),
@@ -68,12 +101,13 @@
     width: 100%;
 
     background: url(../images/hero/hero-heart-mobile.png) center,
-      url(../images/hero/hero-macaroon1-mobile.png) -10% 65%,
-      url(../images/hero/hero-macaroon2-mobile.png),
-      url(../images/hero/hero-macaroon3-mobile.png),
-      url(../images/hero/hero-macaroon4-mobile.png),
+      url(../images/hero/hero-macaroon-mobile.png) 8% 10%,
+      url(../images/hero/hero-macaroon1-mobile.png) -3% 65%,
+      url(../images/hero/hero-macaroon2-mobile.png) 50% 100%,
+      url(../images/hero/hero-macaroon3-mobile.png) 100% 75%,
+      url(../images/hero/hero-macaroon4-mobile.png) 102% 5%,
       url(../images/hero/hero-blue-mobile.png) 100% 200%,
-      url(../images/hero/hero-pink-mobile.png) 300%,
+      url(../images/hero/hero-pink-mobile.png) -500% -50%,
       url(../images/hero/hero-blue-light-mobile.png) 200% -100%,
       url(../images/hero/hero-blue1-mobile.png) -120%;
 
