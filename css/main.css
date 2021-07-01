@@ -1148,4 +1148,26 @@ body {
   font-size: 18px;
   line-height: 1.22;
 }
+
+.promotion__block {
+  position: relative;
+}
+
+.promotion__caption {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 288px;
+  height: 208px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(82, 179, 81, 0)), to(#52B351));
+  background: linear-gradient(180deg, rgba(82, 179, 81, 0), #52B351);
+  border-radius: 5px;
+}
+
+.picture {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=main.css.map */
